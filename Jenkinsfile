@@ -4,7 +4,8 @@ pipeline {
         stage ('Initialize') {
             steps {
                 sh '''
-                    git clone https://github.com/Narasimharaop85/web-project.git
+                    cd /var/lib/jenkins/javaproject
+                    git clone https://github.com/Narasimharaop85/web-project.git 
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
