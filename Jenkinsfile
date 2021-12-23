@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'quality gate passed....'
             }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
