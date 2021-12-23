@@ -7,6 +7,10 @@ pipeline {
                 echo 'Building..'
             }
         }
+        stage('codequality') {
+            steps {
+                echo 'quality gate passed....'
+            }
         stage('Test') {
             steps {
                 echo 'Testing..'
