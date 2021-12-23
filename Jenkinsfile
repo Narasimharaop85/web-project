@@ -6,8 +6,9 @@ pipeline {
                 sh '''
                     cd /var/lib/jenkins/javaproject
                     git clone https://github.com/Narasimharaop85/web-project.git 
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
+                    echo "Git PATH = ${git}"
+                    echo "M2_HOME = ${maven}"
+                    echo "M2_HOME = ${MAVEN_HOME}"
                 '''
             }
         }
